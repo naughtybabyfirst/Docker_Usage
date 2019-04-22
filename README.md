@@ -1,5 +1,9 @@
 # Docker_Usage
 
+## show images
+
+docker images
+
 ## load local images
 
 docker load --input local_image.tar
