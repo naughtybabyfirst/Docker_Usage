@@ -24,4 +24,8 @@ sudo nvidia-docker cp src_path tag_id:des_path
 
 ## 修改镜像后保存
 
-nvidia-docker commit tag_id new_nam
+nvidia-docker commit tag_id new_name:tag
+
+## load path in host
+
+nvidia-docker run -it --shm-size 12G -v docker_folder_path:host_folder_path image_name /bin/bash
